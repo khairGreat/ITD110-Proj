@@ -1,13 +1,24 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { 
+  WelcomePage
+  
+} from './pages/pageRegistry.js'
+
+
 
 function App() {
 
-
+  
   return (
     <>
-      <div>
-        Hello world!
-      </div>
+      <Router>
+        <Routes>
+          
+          <Route path='/' element={<WelcomePage/> }/>
+           
+        </Routes>
+      </Router>
     </>
   )
 }
