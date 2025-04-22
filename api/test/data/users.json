@@ -1,0 +1,12 @@
+[
+    { 
+        "uid" : 1 , 
+        "first_name" : "khair", 
+        "last_name" : "Pama" , 
+        "user_name"  : "k" , 
+        "password" : "123" , 
+        "favorites" : [] , 
+        "saved" : [] , 
+        "recipes" : []
+    }
+]
