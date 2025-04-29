@@ -13,7 +13,7 @@ const btnWIDTH_HEIGHT = 'h-10 w-30' ;
 
 export function Navbar() {
     return (
-      <div className= 'h-33border-gray-300 w-full sticky top-0 flex justify-center '
+      <div className= 'bg-white h-30 w-full sticky top-0 flex justify-center '
       >
 
         <BannerLogo className="h-40" />

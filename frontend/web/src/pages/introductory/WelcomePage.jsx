@@ -1,6 +1,7 @@
 import { Navbar } from "../../components/others/Navbar";
 import { Button } from "@mui/material";
 import { ShrimpVisual } from "../../components/others/ShrimpVisual";
+import { BrowseBtn } from "../../components/buttons/BrowseBtn";
 
 export function WelcomePage() {
   return (
@@ -21,18 +22,12 @@ export function WelcomePage() {
             Cooking Made Easy.
           </h1>
 
-          <p className="text-lg md:text-2xl mb-8 text-justify w-[70%]">
+          <p className="text-lg font-unlock md:text-2xl mb-8 text-justify w-[70%]">
             Say good bye to boring meals and hello to a world of flavor.
             Discover new recipes, share your culinary creations, and connect with food lovers around the globe.
           </p>
 
-          <Button
-            variant="contained"
-            sx={{ backgroundColor: "#FF1F06" }}
-            className="capitalize font-primary w-40"
-          >
-            Browse Recipe
-          </Button>
+         <BrowseBtn/>
         </div>
 
         {/* RIGHT */}
