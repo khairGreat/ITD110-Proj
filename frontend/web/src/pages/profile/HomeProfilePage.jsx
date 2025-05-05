@@ -8,7 +8,7 @@ export const HomeProfilePage = () =>  {
 
         <div>
 
-            Hello profile page
+             Hello jehan profile page
         </div>
     )
 }

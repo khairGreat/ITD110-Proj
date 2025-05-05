@@ -1,5 +1,7 @@
 import {} from 'react';
 import BgPic from "../../assets/bgPic.png" ; 
+import { SignupForm  } from '../../components/forms/SignupForm'; 
+
 
 export const SignUpPage = () => {  
 
@@ -14,6 +16,7 @@ export const SignUpPage = () => {
                         }}
         >
 
+            <SignupForm/>
         
         </div>
     )
