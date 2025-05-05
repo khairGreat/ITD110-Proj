@@ -10,23 +10,40 @@ import {
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { BannerLogo } from "../others/BannerLogo";
+import { useVerify } from '../../hooks/useVerify.js'
+import { authenticate } from "../../hooks/request.js";
+import { useNavigate  } from "react-router-dom";
 
 
 export function LoginForm () {
 
     const [showPassword, setShowPassword] = useState(false);
-    const [password, setPassword] = useState("") ;
-
-  const handleTogglePassword = () => {
-    setShowPassword((prev) => !prev);
-  };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle login logic here
-      };
     
+    const { user_name, password , setPassword, setUsername } = useVerify() ; 
+    const navigate = useNavigate();
+    
+
+    const handleTogglePassword = () => {
+      setShowPassword((prev) => !prev);
+    };
+
+    const handleSubmit = async (e) => {
+          e.preventDefault();
+          
+          const response = await authenticate(user_name, password);
+          
+          if (response.result) { 
+            console.log(response.data);
+            navigate("/profile");
+          } else {
+            console.log('wrong credentials');
+          }         
+    };
+    
+
+      
       return (
+
         <Box
           sx={{
             height: "80vh",
@@ -49,7 +66,7 @@ export function LoginForm () {
                     className="h-40 "
                 />
                 <span
-                    className="font-bold uppercase font-primary text-center"
+                    className="font-annie uppercase text-center"
                 > Sign in to your account.</span> 
                 
             </div>
@@ -61,10 +78,12 @@ export function LoginForm () {
                 <TextField
                     label="Username"
                     variant="outlined"
-                    type="email"
+                    type="text"
                     fullWidth
                     required
-                    margin="normal"            
+                    margin="normal" 
+                    value={user_name}
+                    onChange={(e) => setUsername(e.target.value)} 
                 />
 
                 {/* PASSWORD */}

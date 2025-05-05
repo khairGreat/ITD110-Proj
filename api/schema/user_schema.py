@@ -1,13 +1,18 @@
-from typing import Optional
 from pydantic import BaseModel, Field
+from typing import List, Optional
+from datetime import date
 
-class User(BaseModel):
-    user_id: Optional[int]
-    user_name: Optional[str]
-    password: Optional[str]
-    first_name: Optional[str]
-    last_name: Optional[str]
-    id: Optional[str] = Field(alias="_id")
+class UserLogin(BaseModel):
+    user_name : str 
+    password : str  
+    
+class UserSignUp(BaseModel):
+    first_name: str
+    last_name: str
+    birthdate: date
+    age: Optional[int] = None
+    user_name: str
+    password: str
 
-    class Config:
-        allow_population_by_field_name = True
+    favorites: List[str] = Field(default_factory=list)
+    recipes: List[str] = Field(default_factory=list)
