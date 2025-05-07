@@ -17,19 +17,19 @@ export function WelcomePage() {
         <div className="flex-1 flex flex-col justify-center items-start px-6 md:pl-20">
           <h1
           style={{font : 'font-unlock' , fontWeight : "bolder", fontSize : "5rem"}}
-          className="font-unlock  mb-4">
+          className="font-unlock ">
             Learn. Cook. Share
           </h1>
           <h1 
           style={{
             fontWeight : "bolder" , fontSize : "4rem"
           }}
-          className=" font-unlock mb-6">
+          className=" font-unlock">
             Cooking Made Easy.
           </h1>
 
           <p
-          style={{fontSize : "2rem", marginBottom : "25px", marginTop : "12px"}}
+          style={{fontSize : "2rem"}}
           className="font-unlock  text-justify w-[70%]">
             Say good bye to boring meals and hello to a world of flavor.
             Discover new recipes, share your culinary creations, and connect with food lovers around the globe.
