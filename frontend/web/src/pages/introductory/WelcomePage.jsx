@@ -6,7 +6,7 @@ import { BrowseBtn } from "../../components/buttons/BrowseBtn";
 export function WelcomePage() {
   return (
     <div className="w-[90vw] max-w-full min-w-[600px] mx-auto">
-
+      
       {/* NAVBAR */}
       <Navbar />
 
@@ -15,14 +15,22 @@ export function WelcomePage() {
 
         {/* LEFT */}
         <div className="flex-1 flex flex-col justify-center items-start px-6 md:pl-20">
-          <h1 className="font-unlock font-bold text-4xl md:text-7xl mb-4">
+          <h1
+          style={{font : 'font-unlock' , fontWeight : "bolder", fontSize : "5rem"}}
+          className="font-unlock  mb-4">
             Learn. Cook. Share
           </h1>
-          <h1 className="font-bold font-unlock text-4xl md:text-7xl mb-6">
+          <h1 
+          style={{
+            fontWeight : "bolder" , fontSize : "4rem"
+          }}
+          className=" font-unlock mb-6">
             Cooking Made Easy.
           </h1>
 
-          <p className="text-lg font-unlock md:text-2xl mb-8 text-justify w-[70%]">
+          <p
+          style={{fontSize : "2rem", marginBottom : "25px", marginTop : "12px"}}
+          className="font-unlock  text-justify w-[70%]">
             Say good bye to boring meals and hello to a world of flavor.
             Discover new recipes, share your culinary creations, and connect with food lovers around the globe.
           </p>

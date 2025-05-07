@@ -5,6 +5,8 @@ import {
   
 } from './pages/pageRegistry.js'
 import { HomeProfilePage } from './pages/profile/HomeProfilePage.jsx'
+;
+
 
 
 
