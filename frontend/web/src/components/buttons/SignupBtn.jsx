@@ -15,7 +15,7 @@ export function SignupBtn ( { className = ""}) {
         className= { className}>
             <span 
                 className="capitalize"
-            >Sign-up</span>
+            >SIGN-UP</span>
         </Button>
 
     )

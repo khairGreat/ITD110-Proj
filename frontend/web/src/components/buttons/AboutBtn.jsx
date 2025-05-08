@@ -21,7 +21,7 @@ export const AboutBtn = ( { className = ""}) => {
             <span 
                 className='capitalize'
             >
-            About Us
+            ABOUT US
             </span>
         </Button>
     ) 

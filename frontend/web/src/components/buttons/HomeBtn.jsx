@@ -28,9 +28,9 @@ export const HomeBtn = ( { className = ""}) => {
         
         className={className}> 
             <span
-                className='capitalize'
+                className='capitalize '
             >
-                Home
+                HOME
             </span>
         </Button>
     ) 

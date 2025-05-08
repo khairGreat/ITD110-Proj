@@ -22,7 +22,7 @@ export function LoginBtn ( { className = ""}) {
         >
             <span
                 className="text-black capitalize"
-            >Login</span>
+            >LOGIN</span>
         </Button>
 
     )
